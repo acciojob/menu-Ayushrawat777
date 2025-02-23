@@ -1,12 +1,42 @@
-h1 {
-    color: #27aedb;
-    text-align: center;
-    }
-    
+.app-container {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
 
-button{
-    color: #27aedb;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
+.category-buttons {
+  margin-bottom: 20px;
+}
+
+.category-buttons button {
+  padding: 10px 15px;
+  margin: 5px;
+  border: none;
+  cursor: pointer;
+  background-color: lightgray;
+}
+
+.category-buttons .active {
+  background-color: #007bff;
+  color: white;
+}
+
+.menu-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.menu-item {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin: 10px;
+  width: 200px;
+  text-align: center;
+}
+
+.menu-item img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
 }
