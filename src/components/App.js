@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import CompA from './CompA';
+import Menu from './Menu';
 
 
 const data = [
@@ -80,13 +80,8 @@ const data = [
 
 
 const App = () => {
-
     const[items, setItems] = useState(data)
     const[filteredItems, setFilteredItems] = useState(data)
-
-
-    
-
   return (
     <div id='main'>
         
@@ -145,7 +140,7 @@ const App = () => {
 
         <div style={{display:'flex', flexWrap : "wrap"}}>
             {filteredItems.map((item) => {
-                return <CompA item={item} />
+                return <Menu item={item} />
             })}
         </div>
 
